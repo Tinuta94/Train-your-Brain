@@ -16,9 +16,12 @@ const firstBoxCreator = function (question, a, b, c) {
 }
 const secondBoxCreator = function (answer, answer1, answer2, answe3) {
     let secondBox = document.createElement('div')
+    let inputBox = document.createElement('input')
     secondBox.innerHTML = answer
     document.body.append(secondBox)
+    secondBox.appendChild(inputBox)
     secondBox.setAttribute("id", "answer")
+
     let buttonOne = document.createElement('button')
     buttonOne.innerHTML = 'button1'
     secondBox.appendChild(buttonOne)
