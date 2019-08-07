@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    font-size: 50px;
+    color: wheat;
+}
+.container {
+padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+#category1, #category2, #category3 {
+background:;
+  padding: 5px;
+  width: 300px;
+  height: 100px;
+  margin-top: 10px;
+  
+  line-height: 100px;
+  color: black;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+body {
+    background-image: url("https://www.phdmedia.com/wp-content/uploads/2018/01/iStock_000055960670_LEW-18952-1_brain-waves_1388x1050-300DPI.jpg")
+}
+
+
+
+
+
+
+
+
+
+
+
+
