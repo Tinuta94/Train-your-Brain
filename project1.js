@@ -17,14 +17,23 @@ const firstBoxCreator = function (question, a, b, c) {
 const secondBoxCreator = function (answer, answer1, answer2, answe3) {
     let secondBox = document.createElement('div')
     let inputBox = document.createElement('input')
+    let buttonOne = document.createElement('button')
+
     secondBox.innerHTML = answer
     document.body.append(secondBox)
     secondBox.appendChild(inputBox)
     secondBox.setAttribute("id", "answer")
 
-    let buttonOne = document.createElement('button')
     buttonOne.innerHTML = 'button1'
+    buttonOne.addEventListener('click', () => boxDisappear())
     secondBox.appendChild(buttonOne)
+}
+
+const boxDisappear = function() {
+    console.log('hi')
+    document.getElementById('question').remove()
+    document.getElementById('answer').remove()
+
 }
 
 
