@@ -29,7 +29,7 @@ background: transparent;
   font-size: 30px;
   font-family: 'Martel', serif;
   background: brown;
-  opacity: .9;
+  opacity: .8;
   
 }
 #category1:hover, #category2:hover, #category3:hover {
@@ -47,7 +47,8 @@ background: transparent;
  height: 40px;
  font-size: 30px;
  background-color: black;
- opacity: .8;
+ opacity: .7;
+ 
 }
 a {
  padding: 5px;
@@ -63,7 +64,7 @@ a {
  float: right;
  margin-top: -110px;
  background-color: black;
- opacity: .8;
+ opacity: .7;
 }
 a:hover {
     background-color: blue;
@@ -133,6 +134,17 @@ margin: 460px 0  0 530px;;
  opacity: .8;
 }
     
+#question {
+    background-color: black;
+    margin: -300px 0 0 700px;
+    height: 100px;
+    width: 100px;
+}
+#answer {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    margin: -300px 0 0 700px;
 }
 
 
