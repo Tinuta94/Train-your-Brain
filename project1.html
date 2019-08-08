@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Martel&display=swap" rel="stylesheet">
-    <script defer src="project1.js"></script>
+    <script defer src="jquery.js"></script>
     <link rel="stylesheet" href="project1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,10 +22,10 @@
 </header>
 <body>
         <audio class="audioPlayer" src="https://github.com/Tinuta94/newmus/raw/master/Minute%20Quick%20Booster%20for%20Work%20%26%20Study%2C%20Feel%20_Relaxed%20and%20Focused_%20Instantly..mp3"autoplay controls></audio>
-    <div class="container">
+    <div class="container" id="cont">
 
-    <div id="category1">Geography
-        <div class="list" id="list">
+    <div id="category1" class="category" >Geography
+        <div class="list" id="listg" onclick="hideStuff()" value="Hide">
             <div class="list-item1" id="g1">100</div>
             <div class="list-item2">500</div>
             <div class="list-item3">1000</div>
@@ -33,7 +33,7 @@
     </div>
 
 
-    <div id="category2">Math
+    <div id="category2" class="category">Math
     <div class="list" id="list">
             <div class="list-item1">100</div>
             <div class="list-item2">500</div>
@@ -43,7 +43,7 @@
 
 
 
-    <div id="category3">History
+    <div id="category3" class="category">History
     <div class="list" id="list">
             <div class="list-item1">100</div>
             <div class="list-item2">500</div>
@@ -56,6 +56,7 @@
         <div class="score">Your Score</div>
 </footer>
 
+<script src="project1.js"></script>
 </body>
 
 </html>

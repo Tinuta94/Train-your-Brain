@@ -5,11 +5,11 @@ document.querySelector('#play').innerText = document.querySelector('#name').valu
 document.getElementById('g1').addEventListener('click', () => gOne())
 const gOne = function () {
     console.log('changing this')
-    firstBoxCreator("Beverly Hills is a suburb of which U.S. city??" + "<br>" + "<br>" +"a:San Francisco" + "<br>" + "<br>" + "b:Los Angeles" + "<br>" + "<br>" + "c:San Diego") 
+    firstBoxCreator("Beverly Hills is a suburb of which U.S. city??" + "<br>" + "<br>" +"a-San Francisco" + "<br>" + "<br>" + "b-Los Angeles" + "<br>" + "<br>" + "c-San Diego") 
 
     secondBoxCreator("<br>" + "Pick the correct answer" + "<br> " + "a,b" + " " + "or c" + "<br>") 
 }
-const firstBoxCreator = function (question, a, b, c) {
+const firstBoxCreator = function (question) {
     let firstBox = document.createElement('div')
     firstBox.innerHTML = question
     document.body.append(firstBox)
@@ -34,17 +34,33 @@ const secondBoxCreator = function (answer) {
 
 const boxDisappear = function() {
     console.log('hi')
-    //document.getElementById("question").style.visibility = "hidden"; 
-    firstBoxCreator.getElementById("question").remove()
-    secondBoxCreator.getElementById("answer").remove()
+    firstBox.getElementById("question").remove()
+    secondBox.getElementById("answer").remove()
+    }
 
+function hideStuff() {
+    const lists = document.getElementsByClassName('list')
+    console.log('lists', lists)
+    
+    for (let i = 0; i < lists.length; i++) {
+        console.log(lists[i].id); //second console output
+        lists[i].style.visibility = "hidden"; 
+    }
+ }
+      
+      let stuffButton = document.createElement('button')
+      stuffButton.setAttribute("id", "showButton")
+      stuffButton.innerHTML = 'Show lists'
+      document.body.append(stuffButton)
+      document.getElementById('showButton').addEventListener('click', () => showStuff())
+    
+let showStuff = function() {
+    const lists = document.getElementsByClassName('list')
+     for (let i = 0; i < lists.length; i++) {
+       console.log(lists[i].id); //second console output
+        lists[i].style.visibility = "visible"; 
+    }
 }
 
 
 
-
-//function toggleListButton() {
-//let listButton = document.querySelector('#list')
-//listButton.on('click', function(evnt) {
-    //document.getElementsById("list").remove
-//}
