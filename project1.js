@@ -38,6 +38,8 @@ const secondBoxCreator = function (answer, valueOfText) {
 
 const boxDisappear = function(val) {
     inputA = document.querySelector('#input1').value
+    let currentScore = parseInt(document.querySelector('#currentScore').innerText)
+    console.log(currentScore)
     if (inputA === "b") {
         console.log('true')
         console.log(val + ' is added to your score')
