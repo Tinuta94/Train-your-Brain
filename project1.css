@@ -114,12 +114,12 @@ margin: 0 30px 500px 0;
     
 }
 #sub {
-    margin-left: -70px 0 0 0;
+    margin: -70px 0 0 0;
     height: 30px;
     width: 90px;
     background-color: brown;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 .score {
 margin: 460px 0  0 530px;;
@@ -136,19 +136,35 @@ margin: 460px 0  0 530px;;
     
 #question {
     background-color: black;
-    margin: -300px 0 0 700px;
-    height: 100px;
-    width: 100px;
-    color: red;
+    margin: -500px 0 0 420px;
+    height: 400px;
+    width: 250px;
+    color: white;
+    font-size: 30px;
+    text-align: center
+
 }
 #answer {
     background-color: black;
-    height: 100px;
-    width: 100px;
-    margin: -300px 0 0 700px;
-    color: blue;
+    height: 200px;
+    width: 250px;
+    margin: -350px 0 0 700px;
+    color: white;
+    opacity: 1;
 }
+input {
+    margin: 100px 0 0 0;
+    height: 30px;
 
+}
+#buttonSecond {
+    background-color: red;
+    color: white;
+    height: 20px;
+    width: 50px;
+    margin: 200px 0 0 90px;
+
+}
 
 
 
