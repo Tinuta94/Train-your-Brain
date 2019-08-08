@@ -6,10 +6,10 @@ document.querySelector('#play').innerText = document.querySelector('#name').valu
 })
 document.getElementById('g1').addEventListener('click', () => gOne())
 const gOne = function () {
-    console.log('changing this')
+    valueOfg1 = parseInt(document.getElementById('g1').innerText)
+    console.log(valueOfg1)
     firstBoxCreator("Beverly Hills is a suburb of which U.S. city??" + "<br>" + "<br>" +"a-San Francisco" + "<br>" + "<br>" + "b-Los Angeles" + "<br>" + "<br>" + "c-San Diego") 
-
-    secondBoxCreator("<br>" + "Pick the correct answer" + "<br> " + "a,b" + " " + "or c" + "<br>") 
+    secondBoxCreator("<br>" + "Pick the correct answer" + "<br> " + "a,b" + " " + "or c" + "<br>", valueOfg1) 
 }
 
 
@@ -19,7 +19,7 @@ const firstBoxCreator = function (question) {
     document.body.append(firstBox)
     firstBox.setAttribute("id", "question");
 }
-const secondBoxCreator = function (answer) {
+const secondBoxCreator = function (answer, valueOfText) {
     let secondBox = document.createElement('div')
     let inputBox = document.createElement('input')
     inputBox.setAttribute("id", "input1")
@@ -32,16 +32,18 @@ const secondBoxCreator = function (answer) {
     secondBox.setAttribute("id", "answer")
 
     buttonOne.innerHTML = 'Submit'
-    buttonOne.addEventListener('click', () => boxDisappear())
+    buttonOne.addEventListener('click', () => boxDisappear(valueOfText))
     secondBox.appendChild(buttonOne)
 }
 
-const boxDisappear = function() {
+const boxDisappear = function(val) {
     inputA = document.querySelector('#input1').value
     if (inputA === "b") {
         console.log('true')
+        console.log(val + ' is added to your score')
     } else {
         console.log('false')
+        console.log(val + ' is subtracted from your score')
     }
     
     console.log('The value of the input is ' + inputA)
