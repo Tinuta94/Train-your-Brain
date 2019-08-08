@@ -1,4 +1,6 @@
-
+$(() => {
+    console.log('jquery is here!')
+})
 document.getElementById('sub').addEventListener('click', function(event) {
 document.querySelector('#play').innerText = document.querySelector('#name').value
 })
@@ -9,6 +11,8 @@ const gOne = function () {
 
     secondBoxCreator("<br>" + "Pick the correct answer" + "<br> " + "a,b" + " " + "or c" + "<br>") 
 }
+
+
 const firstBoxCreator = function (question) {
     let firstBox = document.createElement('div')
     firstBox.innerHTML = question
@@ -33,15 +37,22 @@ const secondBoxCreator = function (answer) {
 }
 
 const boxDisappear = function() {
-    console.log('hi')
-    firstBox.getElementById("question").remove()
-    secondBox.getElementById("answer").remove()
+    inputA = document.querySelector('#input1').value
+    if (inputA === "b") {
+        console.log('true')
+    } else {
+        console.log('false')
+    }
+    
+    console.log('The value of the input is ' + inputA)
+    // $('#question').remove()
+    // $('#answer').remove()
     }
 
 function hideStuff() {
     const lists = document.getElementsByClassName('list')
     console.log('lists', lists)
-    
+
     for (let i = 0; i < lists.length; i++) {
         console.log(lists[i].id); //second console output
         lists[i].style.visibility = "hidden"; 
@@ -61,6 +72,7 @@ let showStuff = function() {
         lists[i].style.visibility = "visible"; 
     }
 }
+
 
 
 
