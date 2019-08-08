@@ -7,7 +7,7 @@ const gOne = function () {
     console.log('changing this')
     firstBoxCreator("Beverly Hills is a suburb of which U.S. city??" + "<br>" + "<br>" +"a:San Francisco" + "<br>" + "<br>" + "b:Los Angeles" + "<br>" + "<br>" + "c:San Diego") 
 
-    //secondBoxCreator()
+    secondBoxCreator("<br>" + "Pick the correct answer" + "<br> " + "a,b" + " " + "or c" + "<br>") 
 }
 const firstBoxCreator = function (question, a, b, c) {
     let firstBox = document.createElement('div')
@@ -18,6 +18,7 @@ const firstBoxCreator = function (question, a, b, c) {
 const secondBoxCreator = function (answer) {
     let secondBox = document.createElement('div')
     let inputBox = document.createElement('input')
+    inputBox.setAttribute("id", "input1")
     let buttonOne = document.createElement('button')
     buttonOne.setAttribute("id", "buttonSecond")
 
@@ -41,3 +42,9 @@ const boxDisappear = function() {
 
 
 
+
+//function toggleListButton() {
+//let listButton = document.querySelector('#list')
+//listButton.on('click', function(evnt) {
+    //document.getElementsById("list").remove
+//}
