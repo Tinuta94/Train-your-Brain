@@ -137,10 +137,6 @@ function hideStuff() {
     }
  }
       
-      //let stuffButton = document.createElement('button')
-      //stuffButton.setAttribute("id", "showButton")
-      //stuffButton.innerHTML = 'Show lists'
-      //document.body.append(stuffButton)
       document.getElementById('sl').addEventListener('click', () => showStuff())
     
 let showStuff = function() {
@@ -150,8 +146,9 @@ let showStuff = function() {
         lists[i].style.visibility = "visible"; 
     }
 }
-//newCurrentScore.length = 9
-//if()
 
-
+function hidebox() {
+    let fBox = document.getElementById('g1')
+    fBox.style.visibility="hidden"
+}
 
