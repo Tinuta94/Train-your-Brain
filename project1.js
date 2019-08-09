@@ -81,14 +81,7 @@ const hThree = function () {
 
 
 
-
-
-
-
-
-
-
-const firstBoxCreator = function (question) {
+const firstBoxCreator = function (question, numbQuestion) {
     let firstBox = document.createElement('div')
     firstBox.innerHTML = question
     document.body.append(firstBox)
@@ -144,11 +137,11 @@ function hideStuff() {
     }
  }
       
-      let stuffButton = document.createElement('button')
-      stuffButton.setAttribute("id", "showButton")
-      stuffButton.innerHTML = 'Show lists'
-      document.body.append(stuffButton)
-      document.getElementById('showButton').addEventListener('click', () => showStuff())
+      //let stuffButton = document.createElement('button')
+      //stuffButton.setAttribute("id", "showButton")
+      //stuffButton.innerHTML = 'Show lists'
+      //document.body.append(stuffButton)
+      document.getElementById('sl').addEventListener('click', () => showStuff())
     
 let showStuff = function() {
     const lists = document.getElementsByClassName('list')

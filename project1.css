@@ -86,7 +86,7 @@ body {
 .list-item1, .list-item2, .list-item3 {
     background: wheat;
     padding: 20px;
-    margin: 40px 20px;
+    margin: 40px 0;
     width: 160px;
     height: 60px;
     opacity: .9;
@@ -167,17 +167,22 @@ input {
     width: 50px;
     margin: 100px 10px 300px 10px;
 }
-#showButton {
-    height: 40px;
-    width: 100px;
-    background-color: brown;
-    margin-top: -1000px;
-    margin-left: 350px;
-    color: white;
-    font-size: 15px;
-    border: 2px solid black;
-    position: relative;
+
+    
 }
+#sl {
+        
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    border-radius: 40px;
+    margin-right: 20px;
+    background: red;
+    
+        text-align: center;
+        justify-content: center;
+        
+    }
 
 
 
