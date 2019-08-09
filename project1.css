@@ -196,7 +196,23 @@ input {
     float: right;
     margin-bottom: -600px;
 }
+.textgame {
+    display: none;
+}
+#txtgm {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    padding: 0;
+    width: 70%;
+    position: absolute;
+    height: 70%;
+    z-index: 9;
 
+
+}
 
 
 

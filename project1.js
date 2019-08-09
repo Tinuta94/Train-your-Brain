@@ -1,13 +1,34 @@
-$(() => {
-    console.log('jquery is here!')
-})
+
 document.getElementById('sub').addEventListener('click', function(event) {
 document.querySelector('#play').innerText = document.querySelector('#name').value
 })
+/*
+let questions = [
+    { 
+        question: "What are the five oceans of the world?" + "<br>" + "<br>" + "a-Arctic,Pacific,Atlantic," + "<br>" + "Southern,Indian" + "<br>" + "<br>" + "b-Pacific,Sweet,Cold," + "<br>" + "Spicy,Indian" + "<br>" + "<br>" + "c-Hostile,Chinese," + "<br>" + "Arctic,Japanese,Blue",
+        correctAnswer: "a"
+    }
+]
+
+for(let i = 0; i < 3; i++) {
+    document.getElementById(`g${i}`).addEventListener('click', function (event) {
+        valueOfg1 = parseInt(event.target.innerHTML)
+        event.target.style.visibility = "hidden"
+        console.log(valueOfg1)
+        firstBoxCreator(questions[i].question)
+        secondBoxCreator()
+
+        //firstBoxCreator("What are the five oceans of the world?" + "<br>" + "<br>" + "a-Arctic,Pacific,Atlantic," + "<br>" + "Southern,Indian" + "<br>" + "<br>" + "b-Pacific,Sweet,Cold," + "<br>" + "Spicy,Indian" + "<br>" + "<br>" + "c-Hostile,Chinese," + "<br>" + "Arctic,Japanese,Blue")
+       secondBoxCreator("<br>" + "Pick the correct answer" + "<br> " + "Type a,b" + " " + " or c"  + "<br>", valueOfg1, questions[i].correctAnswer) 
+    })
+}
+*/
+
 document.getElementById('g1').addEventListener('click', () => gOne())
 const gOne = function () {
-    valueOfg1 = parseInt(document.getElementById('g1').innerText)
+    valueOfg1 = parseInt(document.getElementById('g1').innerHTML)
     console.log(valueOfg1)
+    document.getElementById('g1').style.visibility="hidden"
     firstBoxCreator("What are the five oceans of the world?" + "<br>" + "<br>" + "a-Arctic,Pacific,Atlantic," + "<br>" + "Southern,Indian" + "<br>" + "<br>" + "b-Pacific,Sweet,Cold," + "<br>" + "Spicy,Indian" + "<br>" + "<br>" + "c-Hostile,Chinese," + "<br>" + "Arctic,Japanese,Blue")
    secondBoxCreator("<br>" + "Pick the correct answer" + "<br> " + "Type a,b" + " " + " or c"  + "<br>", valueOfg1, 'a') 
 }
@@ -81,7 +102,7 @@ const hThree = function () {
 
 
 
-const firstBoxCreator = function (question, numbQuestion) {
+const firstBoxCreator = function (question) {
     let firstBox = document.createElement('div')
     firstBox.innerHTML = question
     document.body.append(firstBox)
@@ -148,7 +169,17 @@ let showStuff = function() {
 }
 
 function hidebox() {
-    let fBox = document.getElementById('g1')
-    fBox.style.visibility="hidden"
+   // let fBox = document.getElementById('g1')
+    //fBox.style.visibility="hidden"
 }
 
+document.getElementById('gameover').addEventListener('click', function(event) {
+let totalScore = document.querySelector('#currentScore').innerText = newCurrentScore
+if (totalScore >= 500) {
+    document.getElementById("txtgm").style.display = "block";
+console.log('you win')
+} else {
+    alert("Do you want to play again?")
+    console.log('you lost')
+}
+})
