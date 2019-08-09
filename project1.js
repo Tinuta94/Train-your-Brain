@@ -9,8 +9,17 @@ const gOne = function () {
     valueOfg1 = parseInt(document.getElementById('g1').innerText)
     console.log(valueOfg1)
     firstBoxCreator("Beverly Hills is a suburb of which U.S. city??" + "<br>" + "<br>" +"a-San Francisco" + "<br>" + "<br>" + "b-Los Angeles" + "<br>" + "<br>" + "c-San Diego") 
-    secondBoxCreator("<br>" + "Pick the correct answer" + "<br> " + "a,b" + " " + "or c" + "<br>", valueOfg1) 
+    secondBoxCreator("<br>" + "Pick the correct answer" + "<br> " + "a,b" + " " + "or c" + "<br>", valueOfg1, 'b') 
 }
+
+document.getElementById('g2').addEventListener('click', () => gTwo())
+const gTwo = function () {
+    valueOfg2 = parseInt(document.getElementById('g2').innerText)
+    console.log(valueOfg2)
+    firstBoxCreator("Beverly Hills is a suburb of which U.S. city??" + "<br>" + "<br>" +"a-San Francisco" + "<br>" + "<br>" + "b-Los Angeles" + "<br>" + "<br>" + "c-San Diego") 
+    secondBoxCreator("<br>" + "Pick the correct answer" + "<br> " + "a,b" + " " + "or c" + "<br>", valueOfg2, 'a') 
+}
+
 
 
 const firstBoxCreator = function (question) {
@@ -19,7 +28,7 @@ const firstBoxCreator = function (question) {
     document.body.append(firstBox)
     firstBox.setAttribute("id", "question");
 }
-const secondBoxCreator = function (answer, valueOfText) {
+const secondBoxCreator = function (answer, valueOfText, correctAnswer) {
     let secondBox = document.createElement('div')
     let inputBox = document.createElement('input')
     inputBox.setAttribute("id", "input1")
@@ -32,25 +41,29 @@ const secondBoxCreator = function (answer, valueOfText) {
     secondBox.setAttribute("id", "answer")
 
     buttonOne.innerHTML = 'Submit'
-    buttonOne.addEventListener('click', () => boxDisappear(valueOfText))
+    buttonOne.addEventListener('click', () => boxDisappear(valueOfText, correctAnswer))
     secondBox.appendChild(buttonOne)
 }
 
-const boxDisappear = function(val) {
+const boxDisappear = function(val, correctAnswer) {
     inputA = document.querySelector('#input1').value
     let currentScore = parseInt(document.querySelector('#currentScore').innerText)
-    console.log(currentScore)
-    if (inputA === "b") {
+    if (inputA === correctAnswer) {
         console.log('true')
         console.log(val + ' is added to your score')
+        newCurrentScore = currentScore + val
+        document.querySelector('#currentScore').innerText = newCurrentScore
     } else {
         console.log('false')
         console.log(val + ' is subtracted from your score')
+        newCurrentScore = currentScore - val
+        document.querySelector('#currentScore').innerText = newCurrentScore
+
     }
     
     console.log('The value of the input is ' + inputA)
-    // $('#question').remove()
-    // $('#answer').remove()
+    $('#question').remove()
+    $('#answer').remove()
     }
 
 function hideStuff() {
