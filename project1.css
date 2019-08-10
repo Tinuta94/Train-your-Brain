@@ -125,7 +125,7 @@ margin: 0 30px 500px 0;
     font-size: 15px;
 }
 .score {
-margin: 460px 0  0 530px;;
+margin: 460px 0  0 550px;
  border: 3px solid white;
  text-align: center;
  color: black;
@@ -192,10 +192,11 @@ input {
     margin-bottom: 0;
     border-radius: 40px;
     margin-right: 20px;
-    background: powderblue;
+    background: rgb(25-25-112);
     text-align: center;
    justify-content: center;
    padding: 0;
+   color: white;
         
     }
 
