@@ -192,11 +192,9 @@ input {
     font-size: 15px;
     border: 2px solid black;
     padding: 50px;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
-#sl {
-        
+#sl {  
     height: 40px;
     width: 40px;
     margin-top: 50px;
