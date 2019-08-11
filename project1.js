@@ -133,18 +133,14 @@ function hideStuff() {
  }
       
       document.getElementById('sl').addEventListener('click', () => showStuff())
-    
-let showStuff = function() {
+     let showStuff = function() {
     const lists = document.getElementsByClassName('list')
      for (let i = 0; i < lists.length; i++) {
        console.log(lists[i].id); //second console output
         lists[i].style.visibility = "visible"; 
     }
 }
-
-function hidebox() {
-   //let fBox = document.getElementById('g1')
-    //fBox.style.visibility="hidden"
+function hidebox() {  
 }
 
 document.getElementById('gameover').addEventListener('click', function(event) {
