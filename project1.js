@@ -2,36 +2,6 @@
 document.getElementById('sub').addEventListener('click', function(event) {
 document.querySelector('#play').innerText = document.querySelector('#name').value
 })
-/*
-let questions = [
-    { 
-        question: "What are the five oceans of the world?" + "<br>" + "<br>" + "a-Arctic,Pacific,Atlantic," + "<br>" + "Southern,Indian" + "<br>" + "<br>" + "b-Pacific,Sweet,Cold," + "<br>" + "Spicy,Indian" + "<br>" + "<br>" + "c-Hostile,Chinese," + "<br>" + "Arctic,Japanese,Blue",
-        correctAnswer: "a"
-    }
-    {
-        question: "Beverly Hills is a suburb of which U.S. city??" + "<br>" + "<br>" +"a-San Francisco" + "<br>" + "<br>" + "b-Los Angeles" + "<br>" + "<br>" + "c-San Diego"
-        correctAnswer: "b"
-    }
-    {
-        question: "What is the highest mountain in North America?" + "<br>" + "<br>" + "a-Mount Logan" + "<b>" + "Denali" + "<br" + "Mount Saint Elias"
-        correctAnswer: "b"
-    }
-]
-
-for(let i = 0; i < 3; i++) {
-    document.getElementById(`g${i}`).addEventListener('click', function (event) {
-        valueOfg1 = parseInt(event.target.innerHTML)
-        event.target.style.visibility = "hidden"
-        console.log(valueOfg1)
-        firstBoxCreator(questions[i].question)
-        secondBoxCreator()
-
-        //firstBoxCreator("What are the five oceans of the world?" + "<br>" + "<br>" + "a-Arctic,Pacific,Atlantic," + "<br>" + "Southern,Indian" + "<br>" + "<br>" + "b-Pacific,Sweet,Cold," + "<br>" + "Spicy,Indian" + "<br>" + "<br>" + "c-Hostile,Chinese," + "<br>" + "Arctic,Japanese,Blue")
-       secondBoxCreator("<br>" + "Pick the correct answer" + "<br> " + "Type a,b" + " " + " or c"  + "<br>", valueOfg1, questions[i].correctAnswer) 
-    })
-}
-*/
-
 document.getElementById('g1').addEventListener('click', () => gOne())
 const gOne = function () {
     valueOfg1 = parseInt(document.getElementById('g1').innerHTML)
