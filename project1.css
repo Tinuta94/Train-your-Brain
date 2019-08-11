@@ -207,12 +207,10 @@ input {
     text-align: center;
    justify-content: center;
    padding: 0;
-   color: white;
-   
-        
-    }
+   color: white;   
+}
 
-#gameover{
+#gameover {
     margin-right: 25px;
     margin-top: 500px;
     float: right;
@@ -232,7 +230,6 @@ input {
 #txtgm {
     background-image: url("https://media.giphy.com/media/iJc5ynT1VwAUPN55e6/giphy.gif");
     background-size: 100%;
-   
     margin-top: -130px;
     margin-left: 0;
     padding: 0;
