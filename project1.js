@@ -109,12 +109,9 @@ const boxDisappear = function(val, correctAnswer) {
         document.querySelector('#currentScore').innerText = newCurrentScore
         
     } else {
-       
-        console.log('false')
-        console.log(val + ' is subtracted from your score')
-        newCurrentScore = currentScore - val
-        document.querySelector('#currentScore').innerText = newCurrentScore
-
+    console.log(val + ' is subtracted from your score')
+    newCurrentScore = currentScore - val
+    document.querySelector('#currentScore').innerText = newCurrentScore
     }
     
     console.log('The value of the input is ' + inputA)
@@ -122,7 +119,7 @@ const boxDisappear = function(val, correctAnswer) {
     $('#answer').remove()
     }
 
-function hideStuff() {
+    function hideStuff() {
     const lists = document.getElementsByClassName('list')
     console.log('lists', lists)
 
@@ -131,23 +128,22 @@ function hideStuff() {
         lists[i].style.visibility = "hidden"; 
     }
  }
-      
       document.getElementById('sl').addEventListener('click', () => showStuff())
-     let showStuff = function() {
-    const lists = document.getElementsByClassName('list')
-     for (let i = 0; i < lists.length; i++) {
+      let showStuff = function() {
+      const lists = document.getElementsByClassName('list')
+      for (let i = 0; i < lists.length; i++) {
        console.log(lists[i].id); //second console output
-        lists[i].style.visibility = "visible"; 
+      lists[i].style.visibility = "visible"; 
     }
 }
-function hidebox() {  
+     function hidebox() {  
 }
 
-document.getElementById('gameover').addEventListener('click', function(event) {
-let totalScore = document.querySelector('#currentScore').innerText = newCurrentScore
-if (totalScore >= 500) {
-    document.getElementById("txtgm").style.display = "block"
-} else {
-  document.getElementById("egame").style.display = "block"
+     document.getElementById('gameover').addEventListener('click', function(event) {
+     let totalScore = document.querySelector('#currentScore').innerText = newCurrentScore
+     if (totalScore >= 500) {
+     document.getElementById("txtgm").style.display = "block"
+}    else {
+     document.getElementById("egame").style.display = "block"
 }
 })
