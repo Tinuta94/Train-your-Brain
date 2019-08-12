@@ -1,6 +1,8 @@
 # project1.github.io
 
 MY  project 1 - https://tinuta94.github.io/project1.github.io/
+
+
 https://github.com/users/Tinuta94/projects/1
 
 
@@ -15,7 +17,11 @@ There are 3 categories and each has 3 questions with a certain point value.If th
 
 # Technologies Used
 Languages :HTML,CSS,Javascript and JQuery.
+
+
 Design: Google Fonts.
 
 # Wireframe
 ![alt text](https://github.com/Tinuta94/project1.github.io/blob/master/IMG_1779.jpg)
+
+![alt text](https://github.com/Tinuta94/project1.github.io/blob/master/IMG_1778.jpg)
