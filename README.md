@@ -1,6 +1,6 @@
 # Train-your-Brain
 
-MY  project 1 - https://tinuta94.github.io/project1.github.io/
+MY  project 1 - https://tinuta94.github.io/Train-your-Brain/
 
 
 https://github.com/users/Tinuta94/projects/1
