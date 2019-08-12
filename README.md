@@ -21,7 +21,7 @@ Languages :HTML,CSS,Javascript and JQuery.
 
 Design: Google Fonts.
 
-# Wireframe
+# Wireframes
 ![alt text](https://github.com/Tinuta94/project1.github.io/blob/master/IMG_1779.jpg)
 
 ![alt text](https://github.com/Tinuta94/project1.github.io/blob/master/IMG_1778.jpg)
