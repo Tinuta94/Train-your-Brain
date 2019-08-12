@@ -5,7 +5,7 @@ MY  project 1 - https://tinuta94.github.io/project1.github.io/
 
  # Game: "Train your Brain"
 
-![alt text] (https://github.com/Tinuta94/project1.github.io/blob/master/Screen%20Shot%202019-08-12%20at%2010.59.33%20AM.png)
+![alt text](https://github.com/Tinuta94/project1.github.io/blob/master/Screen%20Shot%202019-08-12%20at%2010.59.33%20AM.png)
 
 
 This game has only one player.
