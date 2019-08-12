@@ -3,7 +3,7 @@
 MY  project 1 - https://tinuta94.github.io/project1.github.io/
 
 
-Game: "Train your Brain"
+ # Game: "Train your Brain"
 
 
 This game has only one player.
